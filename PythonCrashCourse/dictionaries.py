@@ -111,3 +111,22 @@ for name, languages in favourite_languages.items():
         print(language, end = " ")
     print()
 
+print()
+
+# A Dictionary in a Dictionary
+users = {
+        "aeinstein": {
+            'first': 'albert',
+            'last': 'einstein',
+            'location': 'princenton',
+            },
+        "mcurie": {
+            'first': 'marie',
+            'last': 'curie',
+            'location': 'paris',
+            },
+        }
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    for k,v in user_info.items():
+        print(k,v , sep = ': ')
